@@ -1,0 +1,31 @@
+{
+  "name": "yourboozebuddy",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run web\" \"npm run theme\"",
+    "web": "svelte-kit dev",
+    "theme": "sass --watch ./src/theme.scss ./src/lib/assets/theme.css",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview",
+    "prepare": "svelte-kit sync",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-static": "^1.0.0-next.29",
+    "@sveltejs/kit": "next",
+    "concurrently": "^7.0.0",
+    "sass": "^1.49.9",
+    "svelte": "^3.46.4",
+    "svelte-check": "^2.2.6",
+    "svelte-preprocess": "^4.10.4",
+    "tslib": "^2.3.1",
+    "typescript": "~4.6.2"
+  },
+  "type": "module",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
