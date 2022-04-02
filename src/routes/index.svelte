@@ -24,7 +24,7 @@
   {#await res.json() then drinks}
     <Rack drinks={drinks.slice(0, 4)} />
 
-    <Banner color="#0583F2">
+    <Banner style="background: var(--bs-blue)">
       <h5
         class="bg text-center text-justify m-5 fs-3 text-decoration-underline"
       >

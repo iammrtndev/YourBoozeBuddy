@@ -1,11 +1,11 @@
 <script>
   export let Class = ''
-  export let color = ''
+  export let style = ''
 </script>
 
 <div
   class={`container-fluid text-white ${Class}`}
-  style={`background: ${color}`}
+  {style}
 >
   <div class="d-flex justify-content-center p-2 h-5">
     <slot />
