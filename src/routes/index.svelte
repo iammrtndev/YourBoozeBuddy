@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
   import Banner from './_components/Banner.svelte'
   import Preferences from './_components/Preferences.svelte'
-  import Products from './_components/Products.svelte'
+  import Rack from './_components/Rack.svelte'
 </script>
 
 <Banner Class="bg-primary">
@@ -11,15 +11,20 @@
   </div>
 </Banner>
 
-<Products />
+{#await fetch('/drinks') then res}
+  {#await res.json() then drinks}
+    <Rack drinks={drinks.slice(0, 4)} />
 
-<Banner Class="bg-secondary">
-  <h5 class="text-center text-justify m-5 fs-3 text-decoration-underline">
-    The best price and the best quality recommended!
-  </h5>
-</Banner>
+    <Banner color="#0583F2">
+      <h5
+        class="bg text-center text-justify m-5 fs-3 text-decoration-underline"
+      >
+        The best price and the best quality recommended!
+      </h5>
+    </Banner>
 
-<Products />
-
+    <Rack drinks={drinks.slice(4)} />
+  {/await}
+{/await}
 
 <Preferences />
