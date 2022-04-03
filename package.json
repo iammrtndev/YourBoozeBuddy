@@ -5,7 +5,7 @@
     "dev": "concurrently --kill-others \"npm run web\" \"npm run theme\"",
     "web": "svelte-kit dev",
     "theme": "sass --watch ./src/theme.scss ./src/lib/assets/theme.css",
-    "build": "svelte-kit build",
+    "build": "sass ./src/theme.scss ./src/lib/assets/theme.css && svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "prepare": "svelte-kit sync",
