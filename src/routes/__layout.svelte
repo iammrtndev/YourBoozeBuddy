@@ -18,19 +18,6 @@
   />
 </svelte:head>
 
-<Navbar>
-  <NavItem href="/" active={$page.routeId == ''}>Home</NavItem>
-  <NavItem href="/contact" active={$page.routeId == 'contact'}>Contact</NavItem>
-  <NavDropdown name="Compare">
-    <DropdownItem href="#">Vine</DropdownItem>
-    <DropdownItem href="#">Vodka</DropdownItem>
-    <DropdownItem href="#">Whiskey</DropdownItem>
-    <DropdownItem href="#">Beer</DropdownItem>
-    <DropdownItem href="#">Liquor</DropdownItem>
-    <DropdownDivider />
-    <DropdownItem href="#">Something else here</DropdownItem>
-  </NavDropdown>
-</Navbar>
 <slot />
 
 <style global>

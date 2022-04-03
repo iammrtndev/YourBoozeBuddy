@@ -2,15 +2,18 @@
   import { select, selectedDrinks } from './compare'
 
   export let drink: Drink
+  export let selectable = true
   let active = false
 
   $: active = $selectedDrinks.includes(drink)
 </script>
 
 <div
-  class="Drink card"
-  class:active
-  on:click={() => select(drink)}
+  class="DrinkCard card"
+  class:active={selectable && active}
+  on:click={() => {
+    if (selectable) select(drink)
+  }}
 >
   <div class="card-body">
     <img
@@ -26,7 +29,7 @@
 </div>
 
 <style>
-  .Drink {
+  .DrinkCard {
     cursor: pointer;
   }
 
