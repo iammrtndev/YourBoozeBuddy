@@ -2,17 +2,14 @@
   import { select, selectedDrinks } from './compare'
 
   export let drink: Drink
-  let activeOne = false
-  let activeTwo = false
+  let active = false
 
-  $: activeOne = $selectedDrinks[0] == drink
-  $: activeTwo = $selectedDrinks[1] == drink
+  $: active = $selectedDrinks.includes(drink)
 </script>
 
 <div
   class="Drink card"
-  class:activeOne
-  class:activeTwo
+  class:active
   on:click={() => select(drink)}
 >
   <div class="card-body">
@@ -33,11 +30,7 @@
     cursor: pointer;
   }
 
-  .activeOne {
-    border: 3px solid var(--bs-primary);
-  }
-
-  .activeTwo {
-    border: 3px solid var(--bs-blue);
+  .active {
+    outline: 2px solid var(--bs-primary);
   }
 </style>
