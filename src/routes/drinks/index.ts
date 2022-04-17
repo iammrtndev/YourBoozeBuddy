@@ -11,37 +11,37 @@ export const get: RequestHandler = async (e) => {
     },
     {
       id: 1,
-      name: 'Hertog Jan',
+      name: 'Heineken',
       description:
-        'Hertog Jan is a Dutch-Belgian beer that is brewed with a special yeast strain that produces a fruity, tart taste.',
+        'Heineken is a Dutch beer that is being sold worldwide and is also known worldwide, according to the Dutch Heineken is mediocre.',
       image: '/hertog.jpg',
     },
     {
       id: 2,
-      name: 'Hertog Jan',
+      name: 'Amstel',
       description:
-        'Hertog Jan is a Dutch-Belgian beer that is brewed with a special yeast strain that produces a fruity, tart taste.',
+        'Amstel is a Dutch beer brand that is now owned by Heineken but the Amstel beer is the most liked beer next to Hertog Jan.',
       image: '/hertog.jpg',
     },
     {
       id: 3,
-      name: 'Hertog Jan',
+      name: 'Jägermeister',
       description:
-        'Hertog Jan is a Dutch-Belgian beer that is brewed with a special yeast strain that produces a fruity, tart taste.',
+        'Jägermeister is a German vodka and is worldwide known for the creative shots such as Jägerbombs.',
       image: '/hertog.jpg',
     },
     {
       id: 4,
-      name: 'Hertog Jan',
+      name: 'Dropshot',
       description:
-        'Hertog Jan is a Dutch-Belgian beer that is brewed with a special yeast strain that produces a fruity, tart taste.',
+        'Dropshot is a Dutch liquor and has a flavour of the Dutch drop. Some people like it, some do not.',
       image: '/hertog.jpg',
     },
     {
       id: 5,
-      name: 'Hertog Jan',
+      name: 'Trojka pink',
       description:
-        'Hertog Jan is a Dutch-Belgian beer that is brewed with a special yeast strain that produces a fruity, tart taste.',
+        'This is a Polish liquor and is most likely used for good flavour or warming up',
       image: '/hertog.jpg',
     },
     {
