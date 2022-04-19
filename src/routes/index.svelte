@@ -9,7 +9,7 @@
   import { onMount } from 'svelte'
   import Banner from './_index/Banner.svelte'
   import { selectedDrinks } from './_index/compare'
-  import DrinkDetails from './_index/DrinkDetails.svelte'
+  import DrinkCompareCard from './_index/DrinkCompareCard.svelte'
   import Preferences from './_index/Preferences.svelte'
   import Rack from './_index/Rack.svelte'
 
@@ -61,10 +61,10 @@
     <div class="container">
       <div class="row gx-5">
         <div class="col">
-          <DrinkDetails drink={$selectedDrinks[0]} />
+          <DrinkCompareCard drink={$selectedDrinks[0]} />
         </div>
         <div class="col">
-          <DrinkDetails drink={$selectedDrinks[1]} />
+          <DrinkCompareCard drink={$selectedDrinks[1]} />
         </div>
       </div>
     </div>

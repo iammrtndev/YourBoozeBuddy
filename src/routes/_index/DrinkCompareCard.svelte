@@ -12,5 +12,11 @@
   </div>
 </div>
 <h3 class="fs-3 text-center my-3">{drink.name}</h3>
-<p class="text-decoration-underline">Description :</p>
-<p>{drink.description}</p>
+<p class="my-2">
+  <span class="text-decoration-underline">Price:</span>
+  {drink.price}
+</p>
+<p class="my-2">
+  <span class="text-decoration-underline">Description:</span>
+  {drink.description}
+</p>
